@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="darkline">
+            <div class="menu">
+                <ul>
+                    <li data-tab="1" class="active">обзор</li>
+                    <li data-tab="2">магазины</li>
+                    <li data-tab="3">продукты</li>
+                    <li data-tab="4">работники</li>
+                    <li data-tab="5">склады</li>
+                    <li data-tab="6">отчеты</li>
+                </ul>
+            </div>
+        </div>
+        <div class="content tab1">
+
+        </div>
+        <div class="content tab2">
+            <h3>Список магазинов</h3>
+            <table class="list"></table>
+            <h3>Добавить новый магазин</h3>
+            <div class="shop_form">
+                <input type="text" class="shop_form_name" placeholder="Название магазина">
+                <input type="text" class="shop_form_address" placeholder="Адрес">
+                <button class="add_shop">Добавить</button>
+            </div>
+        </div>
+        <div class="content tab3">
+            <h3>Список товаров</h3>
+            <table class="list"></table>
+            <h3>Добавить новый товар</h3>
+            <div class="form product_form">
+                <input type="text" class="product_form_name" placeholder="Название товара">
+                <input type="text" class="product_form_sku" placeholder="SKU">
+                <input type="text" class="product_form_price" placeholder="Цена">
+                <button class="add_product">Добавить</button>
+            </div>
+        </div>
+        <div class="content tab4">
+            <h3>Список работников</h3>
+            <table class="list">
+            </table>
+            <h3>Добавить нового работника</h3>
+            <div class="form employer_form">
+                <input type="text" class="employer_form_firstname" placeholder="Имя">
+                <input type="text" class="employer_form_lastname" placeholder="Фамилия">
+                <input type="text" class="employer_form_middlename" placeholder="Отчество">
+                <input type="text" class="employer_form_address" placeholder="Адрес">
+                <input type="text" class="employer_form_gender" placeholder="Пол">
+                <input type="text" class="employer_form_age" placeholder="Возраст">
+                <button class="add_employer">Добавить</button>
+            </div>
+        </div>
+        <div class="content tab5">
+            <h3>Список складов</h3>
+            <table class="list">
+            </table>
+            <h3>Добавить новый склад</h3>
+            <div class="form warehouse_form">
+                <select id="tab5_select"></select>
+                <input type="text" class="warehouse_form_size" placeholder="Вместительность кв. м">
+                <button class="add_warehouse">Добавить</button>
+            </div>
+        </div>
+        <div class="content tab6">
+            <h3>Список отчетов</h3>
+            <ul class="list">
+            </ul>
+            <h3>Сгенерировать новый отчет</h3>
+            <div class="form report_form">
+                <input type="date" class="report_form_name" placeholder="Название магазина">
+                <button class="add_report">Пуск</button>
+            </div>
+        </div>
+        <script src="jquery.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
