@@ -1,0 +1,81 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana;
+}
+
+.content {
+    width:980px;
+    margin:0 auto;
+}
+
+.tab2, .tab3, .tab4, .tab5, .tab6 {
+    display: none;
+}
+
+.darkline {
+    background: #111;
+    width: 100%;
+    height: 30px;
+    text-align:center;
+}
+.menu ul {
+    list-style:none;
+    padding:0;
+    margin:0;
+    display: inline-block;
+}
+.menu li {
+    float:left;
+    padding: 5px 15px;
+    background: #111;
+    color: #fff;
+}
+.menu li:hover {
+    background: #333;
+    cursor: pointer;
+}
+.menu li.active {
+    background: #ff0000;
+}
+
+.content ul {
+    list-style:none;
+}
+table {
+    border-spacing: 0;
+}
+table td {
+    padding: 5px;
+}
+table tr {
+    background: #ccc;
+}
+table tr:nth-child(2n) {
+    background: #E4E4E4;
+}
+.form {
+    margin-left:50px;
+    width: 400px;
+    border: 1px solid #ccc;
+    padding: 20px 20px 40px;
+}
+.form input {
+    width: 100%;
+    margin: 5px 0;
+}
+.form button {
+    float: right;
+    margin: 10px;
+}
+.update {
+    color: green;
+}
+
+.del {
+    color: #ff0000;
+}
+.del:hover {
+    font-weight: bold;
+    cursor: pointer;
+}

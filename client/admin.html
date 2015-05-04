@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="shortcut icon" type="image/x-icon" href="favicon_admin.ico"/>
         <meta charset="utf-8">
-        <title></title>
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Админ панель</title>
+        <link rel="stylesheet" type="text/css" href="style_admin.css">
     </head>
     <body>
         <div class="darkline">
@@ -39,7 +40,15 @@
                 <input type="text" class="product_form_name" placeholder="Название товара">
                 <input type="text" class="product_form_sku" placeholder="SKU">
                 <input type="text" class="product_form_price" placeholder="Цена">
+                <input type="text" class="product_form_image" placeholder="Image url">
                 <button class="add_product">Добавить</button>
+            </div>
+            <div class="form product_update_form" style="display: none;">
+                <input type="text" class="product_update_form_name" placeholder="Название товара">
+                <input type="text" class="product_update_form_sku" placeholder="SKU">
+                <input type="text" class="product_update_form_price" placeholder="Цена">
+                <input type="text" class="product_update_form_image" placeholder="Image url">
+                <button class="update_product">Изменить</button>
             </div>
         </div>
         <div class="content tab4">
@@ -79,6 +88,6 @@
             </div>
         </div>
         <script src="jquery.min.js"></script>
-        <script src="script.js"></script>
+        <script src="script_admin.js"></script>
     </body>
 </html>

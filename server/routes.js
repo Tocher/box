@@ -8,7 +8,9 @@ module.exports.setup = function (app, handlers) {
     app.post('/v1/csv', handlers.csv.create);
 
     app.get('/v1/product', handlers.product.list);
+    app.get('/v1/product/:id', handlers.product.get);
     app.post('/v1/product', handlers.product.create);
+    app.put('/v1/product/:id', handlers.product.update);
     app.delete('/v1/product/:id', handlers.product.remove);
 
     app.get('/v1/warehouse', handlers.warehouse.list);
