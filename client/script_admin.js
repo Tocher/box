@@ -12,6 +12,51 @@ $(document).ready(function() {
         $('.tab'+tabI).show();
     });
 
+    var ctx = document.getElementById("chart1").getContext("2d"),
+        ctx2 = document.getElementById("chart2").getContext("2d"),
+        data = [
+            {
+                value: 620,
+                color:"#F7464A",
+                highlight: "#FF5A5E",
+                label: "Творожок"
+            },
+            {
+                value: 1100,
+                color: "#46BFBD",
+                highlight: "#5AD3D1",
+                label: "Молоко"
+            },
+            {
+                value: 456,
+                color: "#FDB45C",
+                highlight: "#FFC870",
+                label: "Сыр"
+            }
+        ],
+        data2 = [
+            {
+                value: 4600,
+                color:"#F7464A",
+                highlight: "#FF5A5E",
+                label: "Творожок"
+            },
+            {
+                value: 11400,
+                color: "#46BFBD",
+                highlight: "#5AD3D1",
+                label: "Молоко"
+            },
+            {
+                value: 15100,
+                color: "#FDB45C",
+                highlight: "#FFC870",
+                label: "Сыр"
+            }
+        ],
+        myPieChart = new Chart(ctx).Pie(data, {}),
+        myDoughnutChart = new Chart(ctx2).Doughnut(data2);
+
     // tab2
     window.tab2Init = function() {
         $.get(server + 'shop', function(data) {

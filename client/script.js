@@ -15,4 +15,10 @@ $(document).ready(function() {
                 '</div>');
         });
     });
+
+    $('.left').find('li').click(function(e) {
+        var tab = $(this).data('tab');
+        $('.tab').hide();
+        $('.' + tab).show();
+    });
 });

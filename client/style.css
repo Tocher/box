@@ -39,6 +39,7 @@ ul {
 }
 .product_image img {
     max-width: 100%;
+    max-height: 200px;
 }
 .product_name {
     font-size: 18px;
@@ -63,4 +64,31 @@ ul {
 .product_button:hover {
     background: #000;
     cursor: pointer;
+}
+
+.tab_sklad, .tab_sale, .tab_contacts {
+    display:none;
+}
+table {
+    margin: 20px 40px;
+    width: 600px;
+    max-width: 100%;
+    background-color: transparent;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+tbody tr {
+    font-weight: normal;
+    text-shadow: #fff 0 1px 0px;
+    background-color: #f4f4f4;
+}
+tbody tr:nth-child(even) {
+    background-color: #eaeaea;
+}
+table th, table td {
+    padding: 8px;
+    line-height: 20px;
+    text-align: left;
+    vertical-align: top;
+    border-top: 1px solid #dddddd;
 }
